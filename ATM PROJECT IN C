@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+   int pin,a,amount,d,balance,b,c,v;
+   printf("WELCOME TO ATM\n");
+   printf("enter the");
+   printf(" pin:");
+   scanf("%d",&pin);
+   a==pin;
+   if (pin==2230){
+       printf("YOUR PIN IS CORRECT\n");
+       printf("PRESS 1 IS TRANSACTION , PRESS 2 IS BALANCE ENQUIRY\n");
+       scanf("%d",&v);
+       1==v;
+       if (v==1) {
+           printf("WELCOME TO TRANSACTION\n");
+       
+       printf("PRESS 1 IS DEBIT , PRESS 2 IS CREDIT\n");
+       scanf("%d",&b);
+       1==b;
+       if (b==1){
+       
+       printf("WITHDRAW\n");
+       printf("enter the");
+       printf(" amount:");
+       scanf("%d",&amount);
+       b==amount;
+       if (amount<=15000){
+           printf("transaction successful\n");
+           balance=15000-amount;
+           printf("balance amount:%d\n",balance);
+           printf("THANKS FOR YOUR TRANSACTION");
+           
+           
+       } else {
+           printf("insufficient balance\n");
+           printf("PLEASE CHECK YOUR BALANCE");
+       }
+       } else {
+           printf("DEPOSIT\n");
+           printf("enter the");
+           printf(" amount:");
+           scanf("%d",&amount);
+           balance=15000+amount;
+           printf("BALANCE:%d\n",balance);
+           printf("THANKS FOR YOUR TRANSACTION");
+       }
+       
+       } else {
+           printf("BALANCE : 15000\n");
+           printf("THANK YOU");
+       }
+    }else   {
+   printf("INVALID PIN\n");
+   printf("PLEASE CHECK YOUR PIN NUMBER");
+    }
+    
+   return 0;
+    }
